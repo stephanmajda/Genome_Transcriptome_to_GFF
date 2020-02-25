@@ -1,0 +1,10 @@
+name: gff_creation_env
+channels:
+  - bioconda
+dependencies:
+  - python=3.6   
+  - minimap2  
+  - repeatmasker
+  - repeatscout
+  - biopython 
+
