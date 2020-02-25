@@ -4,6 +4,7 @@ This repository serves the replicability of the manuscript: “Nutrient-driven g
 
 **Requirements:**
   - Snakemake (see https://snakemake.readthedocs.io/en/stable/)
+  - Bed2GFF_converting tool (download: https://github.com/dbcls/dbcls-galaxy/blob/master/lib/galaxy/datatypes/converters/bed_to_gff_converter.py)
   - Conda (optional, recommended for building an executable environment, https://docs.conda.io/en/latest/)
     In the terminal type:    
     ```
