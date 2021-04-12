@@ -164,7 +164,7 @@ rule gene_prediction:
         aug_out = "../results/augustus/{sample}_augustus_with_rnaseq_repeatmasked.out",
     threads:3
     run:
-        shell("augustus --species=arabidopsis {input.genome_masked} --hintsfile={input.hint} --gff3=on --softmasking=1 --singlestrand=true  --UTR=off --alternatives-from-evidence=false --extrinsicCfgFile=~/miniconda3/envs/augustus/config/extrinsic/augustus_extrinsic.cfg > {output.aug_out}")
+        shell("augustus --species=arabidopsis {input.genome_masked} --hintsfile={input.hint} --gff3=on --softmasking=1 --singlestrand=true  --UTR=off --alternatives-from-evidence=false --extrinsicCfgFile=extrinsic.M.RM.E.W.cfg > {output.aug_out}")
         #todo: remove comments from gff,,,,~/miniconda3/envs/augustus/config/extrinsic$ less extrinsic.M.RM.E.W.cfg
         # --AUGUSTUS_CONFIG_PATH=/home/sm/miniconda3/envs/augustus/config/
         #augustus_extrinsic.cfg
